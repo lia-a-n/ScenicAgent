@@ -2,6 +2,13 @@
 
 面向景区咨询场景的全栈智能客服演示项目，覆盖知识问答、票务交易、行程规划、投诉转人工四类业务。后端基于 FastAPI + LangGraph，前端为 Vue3 + Vant4 移动端 H5，支持 SSE 流式输出与多轮会话记忆。
 
+## 演示
+
+
+https://github.com/user-attachments/assets/613d41bf-f621-40ff-906e-de2ee08f5f16
+
+
+
 ## 技术栈
 
 - 后端：Python 3.12 / FastAPI / LangGraph / LangChain / SQLAlchemy 2.0（异步）
