@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+
+# 运行时产物(可重新生成,不上传)
+logs/
+backend/data/chroma/
+backend/data/phoenix/
+
+# Node / 前端
+node_modules/
+frontend/dist/
+
+# 环境与密钥
+.env
+*.local
+
+# 编辑器
+.vscode/
+.idea/
+
+# 内部开发记录(不公开)
+改动记录.md
+*.mp4

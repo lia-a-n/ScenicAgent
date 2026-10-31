@@ -1,0 +1,52 @@
+{"id": "K01", "type": "knowledge", "q": "成人票多少钱一张", "intent": "ticket_qa", "keywords": ["180"], "source": "02_门票政策.md"}
+{"id": "K02", "type": "knowledge", "q": "学生票价格是多少,研究生能用吗", "intent": "ticket_qa", "keywords": ["140"], "source": "03_优惠免票.md"}
+{"id": "K03", "type": "knowledge", "q": "60岁以上老人门票有优惠吗", "intent": "ticket_qa", "keywords": ["90"], "source": "03_优惠免票.md"}
+{"id": "K04", "type": "knowledge", "q": "多高的小孩需要买儿童票", "intent": "ticket_qa", "alt_intent": ["park_info"], "keywords": ["1.2", "1.5"], "source": "03_优惠免票.md"}
+{"id": "K05", "type": "knowledge", "q": "亲子套票包含什么,多少钱", "intent": "ticket_qa", "keywords": ["260"], "source": "02_门票政策.md"}
+{"id": "K06", "type": "knowledge", "q": "门票买了之后临时去不了能退吗", "intent": "ticket_qa", "keywords": ["20:00"], "source": "04_退改规则.md"}
+{"id": "K07", "type": "knowledge", "q": "票可以改签到其他日期吗", "intent": "ticket_qa", "keywords": ["改签"], "source": "04_退改规则.md"}
+{"id": "K08", "type": "knowledge", "q": "70岁以上老人要门票吗", "intent": "ticket_qa", "keywords": ["免票"], "sources": ["03_优惠免票.md", "02_门票政策.md"]}
+{"id": "K09", "type": "knowledge", "q": "景区早上几点开门", "intent": "park_info", "keywords": ["8:00"], "source": "01_开放时间.md"}
+{"id": "K10", "type": "knowledge", "q": "下午几点就不能入园了", "intent": "park_info", "keywords": ["17:00"], "source": "01_开放时间.md"}
+{"id": "K11", "type": "knowledge", "q": "飞鸟剧场的演出一天有几场,分别几点", "intent": "park_info", "keywords": ["10:30", "14:30"], "source": "08_演出时刻.md"}
+{"id": "K12", "type": "knowledge", "q": "花车巡游几点开始,在哪里看", "intent": "park_info", "keywords": ["15:30"], "source": "08_演出时刻.md"}
+{"id": "K13", "type": "knowledge", "q": "彩虹滑道小孩能玩吗,身高要求多少", "intent": "park_info", "keywords": ["1.2"], "source": "06_游玩须知.md"}
+{"id": "K14", "type": "knowledge", "q": "进去之后索道还要另外收费吗", "intent": "traffic", "alt_intent": ["park_info", "ticket_qa"], "keywords": ["60"], "source": "07_索道游船.md"}
+{"id": "K15", "type": "knowledge", "q": "索道运营到几点", "intent": "park_info", "keywords": ["16:30"], "source": "07_索道游船.md"}
+{"id": "K16", "type": "knowledge", "q": "景区可以带宠物进去吗", "intent": "park_info", "keywords": ["宠物"], "source": "06_游玩须知.md"}
+{"id": "K17", "type": "knowledge", "q": "里面有寄存行李的地方吗,怎么收费", "intent": "park_info", "keywords": ["寄存"], "source": "10_常见问题.md"}
+{"id": "K18", "type": "knowledge", "q": "畅玩腕带是什么,包含哪些项目", "intent": "park_info", "keywords": ["腕带"], "source": "06_游玩须知.md"}
+{"id": "K19", "type": "knowledge", "q": "坐地铁怎么到景区", "intent": "traffic", "keywords": ["7"], "source": "05_交通指南.md"}
+{"id": "K20", "type": "knowledge", "q": "开车去导航到哪里,停车费怎么收", "intent": "traffic", "keywords": ["10"], "source": "05_交通指南.md"}
+{"id": "K21", "type": "knowledge", "q": "地铁站出来离门口远吗,有接驳车吗", "intent": "traffic", "keywords": ["接驳"], "source": "05_交通指南.md"}
+{"id": "K22", "type": "knowledge", "q": "游船码头在哪里,船票多少钱", "intent": "traffic", "alt_intent": "park_info", "keywords": ["船"], "source": "07_索道游船.md"}
+{"id": "K23", "type": "knowledge", "q": "园区里不想走路有什么代步的", "intent": "traffic", "keywords": ["小火车"], "source": "05_交通指南.md"}
+{"id": "K24", "type": "knowledge", "q": "节假日开园时间和平日一样吗", "intent": "park_info", "keywords": ["7:30"], "source": "01_开放时间.md"}
+{"id": "O01", "type": "order", "q": "帮我买两张明天的成人票", "intent": "ticket_order", "keywords": ["订单号", "360", "已支付"]}
+{"id": "O02", "type": "order", "q": "我要买一张学生票,明天去玩", "intent": "ticket_order", "keywords": ["订单号", "140"]}
+{"id": "O03", "type": "order", "q": "来三张后天的老人票", "intent": "ticket_order", "keywords": ["订单号", "270"]}
+{"id": "O04", "type": "order", "q": "帮我订一套亲子套票,明天用", "intent": "ticket_order", "keywords": ["订单号", "260"]}
+{"id": "O05", "type": "order", "q": "两张儿童票,后天的,帮我下单", "intent": "ticket_order", "keywords": ["订单号", "180"]}
+{"id": "O06", "type": "order", "q": "你们都有什么票种可以买", "intent": "ticket_qa", "alt_intent": "ticket_order", "keywords": ["成人票", "儿童票"]}
+{"id": "O07", "type": "order", "q": "我想退票怎么操作", "intent": "ticket_order", "keywords": ["订单号"]}
+{"id": "O08", "type": "order", "q": "帮我查一下我的订单", "intent": "ticket_order", "keywords": ["订单号"]}
+{"id": "P01", "type": "plan", "q": "明天一日游怎么安排比较好", "intent": "planning", "date": "明天"}
+{"id": "P02", "type": "plan", "q": "帮我规划明天的路线,我带着60多岁的父母", "intent": "planning", "date": "明天", "has_elder": true}
+{"id": "P03", "type": "plan", "q": "后天带一个5岁的小朋友玩一天怎么安排", "intent": "planning", "date": "后天", "child_ages": [5]}
+{"id": "P04", "type": "plan", "q": "明天和两个朋友一起,推荐刺激点的玩法", "intent": "planning", "date": "明天"}
+{"id": "P05", "type": "plan", "q": "后天全家出游,有老人有个8岁孩子,给个行程", "intent": "planning", "date": "后天", "child_ages": [8], "has_elder": true}
+{"id": "P06", "type": "plan", "q": "明天上午10点才到园,半天能怎么玩", "intent": "planning", "date": "明天"}
+{"id": "P07", "type": "plan", "q": "带4岁宝宝明天去,有什么轻松的路线", "intent": "planning", "date": "明天", "child_ages": [4]}
+{"id": "P08", "type": "plan", "q": "后天想带爸妈看演出顺便逛逛,怎么安排", "intent": "planning", "date": "后天", "has_elder": true}
+{"id": "P09", "type": "plan", "q": "明天情侣两个人一日游路线推荐", "intent": "planning", "date": "明天"}
+{"id": "P10", "type": "plan", "q": "后天带10岁的小朋友,想玩滑道和索道,帮我安排", "intent": "planning", "date": "后天", "child_ages": [10]}
+{"id": "H01", "type": "handoff", "q": "你们的工作人员态度太差了,我要投诉", "intent": "complaint", "keywords": ["工单"]}
+{"id": "H02", "type": "handoff", "q": "等了一个小时项目都不开,什么垃圾景区", "intent": "complaint", "keywords": ["工单"]}
+{"id": "H03", "type": "handoff", "q": "我要找人工客服,机器人解决不了", "intent": "ticket_qa", "ignore_intent": true, "keywords": ["工单"]}
+{"id": "H04", "type": "handoff", "q": "你们这个退票规则就是霸王条款,我要投诉到底", "intent": "complaint", "keywords": ["工单"]}
+{"id": "X01", "type": "miss", "q": "你们景区老板叫什么名字,手机号多少", "intent": "chitchat"}
+{"id": "X02", "type": "miss", "q": "明天股市会涨吗,帮我看看行情", "intent": "chitchat"}
+{"id": "X03", "type": "miss", "q": "景区附近哪家理发店烫发比较好", "intent": "chitchat"}
+{"id": "X04", "type": "miss", "q": "帮我写一首七言绝句赞美月亮", "intent": "chitchat"}
+{"id": "C01", "type": "chitchat", "q": "你好呀", "intent": "chitchat", "keywords": ["你好"]}
+{"id": "C02", "type": "chitchat", "q": "你是谁,能帮我做什么", "intent": "chitchat", "keywords": ["客服"]}

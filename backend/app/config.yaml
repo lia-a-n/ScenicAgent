@@ -1,0 +1,66 @@
+# 云栖湖度假区智能客服 Agent 配置
+
+server:
+  host: "0.0.0.0"
+  port: 8000
+
+# MySQL 连接串(格式: mysql+aiomysql://用户:密码@主机:3306/库名?charset=utf8mb4)
+mysql:
+  endpoint: "${MYSQL_ENDPOINT}"
+  # 仅用于建库阶段的库名
+  database: "scenic_agent"
+
+# Redis 连接串(格式: redis://主机:6379/库号)
+redis:
+  endpoint: "${REDIS_ENDPOINT}"
+
+# 天气数据源(Open-Meteo,免 key);坐标为度假区参考位置
+weather:
+  latitude: 30.25
+  longitude: 120.17
+  timezone: "Asia/Shanghai"
+
+# 模型配置(DashScope 兼容 OpenAI 协议)
+models:
+  chat:
+    api_key: "${DASHSCOPE_API_KEY}"
+    base_url: "https://dashscope.aliyuncs.com/compatible-mode/v1"
+    model_name: "qwen-plus"
+    temperature: 0.3
+  # 轻量模型:意图分类、查询改写、口语化讲解等简单任务,成本约为 plus 的 1/3
+  light:
+    api_key: "${DASHSCOPE_API_KEY}"
+    base_url: "https://dashscope.aliyuncs.com/compatible-mode/v1"
+    model_name: "qwen-flash"
+    temperature: 0.3
+  embedding:
+    api_key: "${DASHSCOPE_API_KEY}"
+    base_url: "https://dashscope.aliyuncs.com/compatible-mode/v1"
+    model_name: "text-embedding-v3"
+  rerank:
+    api_key: "${DASHSCOPE_API_KEY}"
+    model_name: "gte-rerank-v2"
+
+# RAG 检索配置
+rag:
+  chroma_path: "./data/chroma"   # 相对路径以 backend 目录为基准(见 config.py),与启动时的工作目录无关
+  collection: "yunqihu_kb"
+  top_k: 4              # 最终进入生成阶段的文档数
+  recall_k: 10          # 向量召回候选数
+  min_score: 0.15       # rerank 后低于该分数视为未命中,转人工(gte-rerank-v2 分数尺度压缩,经正负样本标定)
+  enable_query_rewrite: true
+
+# 多轮历史
+history:
+  max_turns: 10
+
+# 意图分类阈值
+intent:
+  min_confidence: 0.6
+  max_miss_turns: 2     # 连续未命中知识库多少轮转人工
+
+# 本地全链路追踪(Arize Phoenix,trace 落本机 SQLite,不经第三方服务)
+# 需要先启动 phoenix serve,UI 地址 http://localhost:6006
+tracing:
+  enabled: true
+  endpoint: "http://localhost:6006"

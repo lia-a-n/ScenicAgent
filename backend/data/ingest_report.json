@@ -1,0 +1,93 @@
+{
+  "generated_at": "2026-10-30 12:04:28",
+  "files": {
+    "total": 12,
+    "md": 10,
+    "docx": 2,
+    "failed": 0
+  },
+  "chunks": {
+    "total": 47,
+    "avg_chars": 134.9,
+    "max_chars": 344,
+    "short_chunks": 0,
+    "duplicate_skipped": 0
+  },
+  "per_file": [
+    {
+      "file": "01_开放时间.md",
+      "format": "md",
+      "chunks": 3,
+      "chars": 391
+    },
+    {
+      "file": "02_门票政策.md",
+      "format": "md",
+      "chunks": 3,
+      "chars": 429
+    },
+    {
+      "file": "03_优惠免票.md",
+      "format": "md",
+      "chunks": 3,
+      "chars": 384
+    },
+    {
+      "file": "04_退改规则.md",
+      "format": "md",
+      "chunks": 4,
+      "chars": 300
+    },
+    {
+      "file": "05_交通指南.md",
+      "format": "md",
+      "chunks": 3,
+      "chars": 416
+    },
+    {
+      "file": "06_游玩须知.md",
+      "format": "md",
+      "chunks": 6,
+      "chars": 670
+    },
+    {
+      "file": "07_索道游船.md",
+      "format": "md",
+      "chunks": 3,
+      "chars": 446
+    },
+    {
+      "file": "08_演出时刻.md",
+      "format": "md",
+      "chunks": 4,
+      "chars": 426
+    },
+    {
+      "file": "09_亲子老人.md",
+      "format": "md",
+      "chunks": 3,
+      "chars": 496
+    },
+    {
+      "file": "10_常见问题.md",
+      "format": "md",
+      "chunks": 3,
+      "chars": 509
+    },
+    {
+      "file": "11_园区导览手册.docx",
+      "format": "docx",
+      "chunks": 6,
+      "chars": 891
+    },
+    {
+      "file": "12_餐饮住宿指南.docx",
+      "format": "docx",
+      "chunks": 6,
+      "chars": 982
+    }
+  ],
+  "short_chunks_detail": [],
+  "duplicates": [],
+  "failed": []
+}

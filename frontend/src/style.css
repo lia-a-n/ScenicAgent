@@ -1,0 +1,23 @@
+/* 全局样式:聊天界面全屏布局 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#app {
+  height: 100%;
+  background: #f2f4f7;
+  font-family: -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Microsoft YaHei', sans-serif;
+}
+
+#app {
+  max-width: 480px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  background: #f2f4f7;
+  box-shadow: 0 0 24px rgba(0, 0, 0, 0.06);
+}
