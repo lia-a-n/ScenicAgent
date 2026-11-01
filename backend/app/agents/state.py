@@ -26,7 +26,7 @@ class IntentResult(BaseModel):
 
 
 class ItineraryStep(BaseModel):
-    time: str = Field(description="开始时间,如 09:30")
+    time: str = Field(default="", description="开始时间,由代码统一编排,生成时可留空")
     poi_name: str = Field(description="地点/项目名称,必须来自提供的项目清单")
     activity: str = Field(description="做什么")
     tip: str = Field(default="", description="注意事项")

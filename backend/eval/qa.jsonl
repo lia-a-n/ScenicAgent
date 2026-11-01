@@ -22,6 +22,10 @@
 {"id": "K22", "type": "knowledge", "q": "游船码头在哪里,船票多少钱", "intent": "traffic", "alt_intent": "park_info", "keywords": ["船"], "source": "07_索道游船.md"}
 {"id": "K23", "type": "knowledge", "q": "园区里不想走路有什么代步的", "intent": "traffic", "keywords": ["小火车"], "source": "05_交通指南.md"}
 {"id": "K24", "type": "knowledge", "q": "节假日开园时间和平日一样吗", "intent": "park_info", "keywords": ["7:30"], "source": "01_开放时间.md"}
+{"id": "K25", "type": "knowledge", "q": "园区里有导游讲解服务吗,怎么预约", "intent": "park_info", "keywords": ["90", "提前一天"], "source": "11_园区导览手册.docx"}
+{"id": "K26", "type": "knowledge", "q": "带小孩去,婴儿车能租吗", "intent": "park_info", "keywords": ["200"], "source": "11_园区导览手册.docx"}
+{"id": "K27", "type": "knowledge", "q": "园区里吃饭有什么推荐,人均大概多少钱", "intent": "park_info", "keywords": ["128"], "source": "12_餐饮住宿指南.docx"}
+{"id": "K28", "type": "knowledge", "q": "景区里有酒店住吗,大概多少钱一晚", "intent": "park_info", "keywords": ["688"], "source": "12_餐饮住宿指南.docx"}
 {"id": "O01", "type": "order", "q": "帮我买两张明天的成人票", "intent": "ticket_order", "keywords": ["订单号", "360", "已支付"]}
 {"id": "O02", "type": "order", "q": "我要买一张学生票,明天去玩", "intent": "ticket_order", "keywords": ["订单号", "140"]}
 {"id": "O03", "type": "order", "q": "来三张后天的老人票", "intent": "ticket_order", "keywords": ["订单号", "270"]}
@@ -46,7 +50,7 @@
 {"id": "H04", "type": "handoff", "q": "你们这个退票规则就是霸王条款,我要投诉到底", "intent": "complaint", "keywords": ["工单"]}
 {"id": "X01", "type": "miss", "q": "你们景区老板叫什么名字,手机号多少", "intent": "chitchat"}
 {"id": "X02", "type": "miss", "q": "明天股市会涨吗,帮我看看行情", "intent": "chitchat"}
-{"id": "X03", "type": "miss", "q": "景区附近哪家理发店烫发比较好", "intent": "chitchat"}
+{"id": "X03", "type": "miss", "q": "景区附近哪家理发店烫发比较好", "intent": "park_info"}
 {"id": "X04", "type": "miss", "q": "帮我写一首七言绝句赞美月亮", "intent": "chitchat"}
 {"id": "C01", "type": "chitchat", "q": "你好呀", "intent": "chitchat", "keywords": ["你好"]}
 {"id": "C02", "type": "chitchat", "q": "你是谁,能帮我做什么", "intent": "chitchat", "keywords": ["客服"]}

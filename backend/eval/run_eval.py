@@ -57,7 +57,7 @@ async def _eval_plan(case: dict, final: dict) -> tuple[bool, str]:
     it = Itinerary(**raw)
 
     facts, _ = await _gather_facts(normalize_date(case.get("date", "明天")))
-    err = _validate(it, facts, [])
+    err, _ = _validate(it, facts, [])
     if err:
         return False, f"约束违规: {'；'.join(err)}"
 
